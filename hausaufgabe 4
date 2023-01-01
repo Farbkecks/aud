@@ -1,0 +1,15 @@
+T: binärer Suchbaum
+v: Wurzel des Baumes
+
+funkkion GRADE-ZAHLEN-SUCHEN(T, v)
+    sum ← 0
+    if key[v] mod 2 == 2
+        sum ← sum + 1
+    if links[v] != NIL 
+        sum ← sum GRADE-ZAHLEN-SUCHEN(T, links[v])
+    if rechts[v] != NIL 
+        sum ← sum + GRADE-ZAHLEN-SUCHEN(T, rechts[v])
+    return sum
+    
+
+    
