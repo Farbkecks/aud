@@ -1,0 +1,24 @@
+Versuch 2:
+Eingabe: Graph G=(V,E), Knoten v ∈ V
+Ausgabe: ex(v)
+
+ergebnis ← 0
+l ← Algorithmuss 3.17 mit selbigem Grphen und Koten v
+for länge in "jeder wert in l" do 
+    if länge > ergebnis do
+        ergebnis ← länge
+
+ex(v) ← ergebnis
+
+
+--------------------------
+c)
+--------------------------
+Eingabe: Graph G=(V,E)
+Ausgabe: diam(G) 
+
+for v in "jeder noten in V" do
+    if ex(v) > ergebnis do // für ex(v) den Algorithmuss aus b) nehmen
+        ergebnis ← ex(v)
+
+diam(g) ← ergebnis
